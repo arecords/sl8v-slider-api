@@ -19,7 +19,7 @@ $(document).on('ready.formslider', '.slidevision-formslider', function(){
 ```
 
 ## Url Dispatcher
-There are two parameters that can control wich slide the user sees at the beginning:
+There are two parameters that can control which slide the user sees at the beginning:
 * `sl8v-goto-index=[indexFromZero]` loads a certain slide by index
 * `sl8v-goto-id=[slideId]` loads a certain slide by slideId
 
@@ -30,12 +30,12 @@ There are two parameters that can control wich slide the user sees at the beginn
 #### sl8v.api.container()
 * The container the SlideVision slider is initialized on.
 
-* Most the time is `$('.slidevision-formslider')`.
+* Most of the time is `$('.slidevision-formslider')`.
 
 #### sl8v.api.slides()
 * This method returns object of the slides with the index as key and the div as value.
 
-You can iterate over the  slides by doing the following:
+You can iterate over the slides by doing the following:
 ```javascript
 $(sl8v.api.slides()).each(function(index, slide){
   var slideId = $(slide).data('id');
@@ -49,7 +49,7 @@ $(sl8v.api.slides()).each(function(index, slide){
 
 ## sl8v.api.transport
 #### sl8v.api.transport.index()
-* Return the current slide index.
+* Returns the current slide index.
 
 #### sl8v.api.transport.count()
 * Returns the amount of slides.
@@ -57,20 +57,20 @@ $(sl8v.api.slides()).each(function(index, slide){
 #### sl8v.api.transport.next()
 * Triggeres transition to the next slide.
 
-* This action will maybe not executed if an input field of the current slide has an validation error for example.
+* This action will maybe not be executed if an input field of the current slide has an validation error for example.
 
 #### sl8v.api.transport.prev()
-* Triggeres transition to the previous slide.
+* Triggers transition to the previous slide.
 
 #### sl8v.api.transport.goto(indexFromZero)
 * Triggers transition to a certain slide on a zero based index.
 
-* This action will maybe not executed if an input field of the current slide has an validation error for example.
+* This action will maybe not be executed if an input field of the current slide has an validation error for example.
 
 #### sl8v.api.transport.gotoId(slideId)
 * Triggers transition to a certain slide based on the slide id.
 
-* This action will maybe not executed if an input field of the current slide has an validation error for example.
+* This action will maybe not be executed if an input field of the current slide has an validation error for example.
 
 ## sl8v.api.plugins
 #### sl8v.api.plugins.get(name)
